@@ -1,0 +1,16 @@
+# SceneValidator Configuration
+
+project_name: "Media Production Project"
+
+validation_rules:
+  naming_convention: "prefix_objectName_suffix"
+  required_elements: ["camera", "lighting", "environment"]
+  forbidden_elements: ["default_cube", "test_object"]
+  
+output:
+  format: "html"
+  directory: "validation_reports"
+  
+logging:
+  level: "INFO"
+  file: "validator.log"
